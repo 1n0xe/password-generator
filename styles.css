@@ -1,0 +1,95 @@
+/* Réinitialisation des styles par défaut du navigateur */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Centre le contenu de la page et fixe une largeur maximale */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styles de l'en-tête */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles pour les titres de section */
+h2 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Styles pour les options de génération */
+.generation-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les champs d'option individuels */
+.option {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles pour les labels des options */
+.option label {
+    margin-right: 10px;
+}
+
+/* Styles pour le bouton de génération du mot de passe */
+#generate-password {
+    display: block;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le mot de passe généré */
+#password-display {
+    font-family: 'Courier New', monospace;
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Styles pour le bouton de copie du mot de passe */
+#copy-password {
+    display: block;
+    background-color: #f1c40f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Changement de la couleur du bouton au survol */
+#generate-password:hover,
+#copy-password:hover {
+    background-color: #666;
+}

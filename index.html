@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Métadonnées et encodage des caractères -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Titre de la page -->
+    <title>Générateur de mots de passe sécurisés</title>
+
+    <!-- Lien vers le fichier CSS pour la mise en forme -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Conteneur principal de la page -->
+    <div class="container">
+        <!-- En-tête avec le titre de l'application -->
+        <header>
+            <h1>Générateur de mots de passe sécurisés</h1>
+        </header>
+
+        <!-- Section des options de génération -->
+        <section class="generation-options">
+            <h2>Options de génération</h2>
+
+            <!-- Longueur du mot de passe -->
+            <div class="option">
+                <label for="password-length">Longueur :</label>
+                <input type="number" id="password-length" min="8" max="64" value="12">
+            </div>
+
+            <!-- Inclusion de chiffres -->
+            <div class="option">
+                <label for="include-numbers">Inclure des chiffres :</label>
+                <input type="checkbox" id="include-numbers" checked>
+            </div>
+
+            <!-- Inclusion de lettres majuscules -->
+            <div class="option">
+                <label for="include-uppercase">Inclure des lettres majuscules :</label>
+                <input type="checkbox" id="include-uppercase" checked>
+            </div>
+
+            <!-- Inclusion de lettres minuscules -->
+            <div class="option">
+                <label for="include-lowercase">Inclure des lettres minuscules :</label>
+                <input type="checkbox" id="include-lowercase" checked>
+            </div>
+
+            <!-- Inclusion de caractères spéciaux -->
+            <div class="option">
+                <label for="include-special-characters">Inclure des caractères spéciaux :</label>
+                <input type="checkbox" id="include-special-characters" checked>
+            </div>
+
+            <!-- Bouton pour générer le mot de passe -->
+            <button id="generate-password">Générer un mot de passe</button>
+        </section>
+
+        <!-- Section pour afficher le mot de passe généré -->
+        <section class="generated-password">
+            <h2>Mot de passe généré</h2>
+
+            <!-- Affichage du mot de passe généré -->
+            <div id="password-display"></div>
+
+            <!-- Bouton pour copier le mot de passe -->
+            <button id="copy-password">Copier le mot de passe</button>
+        </section>
+    </div>
+
+    <!-- Lien vers le fichier JavaScript pour la logique de l'application -->
+    <script src="main.js"></script>
+</body>
+
+</html>

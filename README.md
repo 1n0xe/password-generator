@@ -23,7 +23,7 @@ Pour installer et utiliser ce projet localement, suivez les étapes suivantes :
 1. Clonez le dépôt GitHub sur votre ordinateur :
 
 ```
-git clone https://github.com/[votre_nom_utilisateur]/generateur-mots-de-passe.git
+git clone https://github.com/1n0xe/generateur-mots-de-passe.git
 ```
 
 2. Ouvrez le fichier `index.html` dans votre navigateur Web.
